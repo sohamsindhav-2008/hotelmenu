@@ -1,53 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Royal Hotel</title>
+<title>Royal Resort Rooms</title>
 
 <style>
 
 body{
     font-family: Arial;
-    background-color: #f2f2f2;
-    text-align: center;
+    background-color:#f2f2f2;
+    text-align:center;
+    margin:0;
 }
 
-header{
-    background-color: darkred;
-    color: white;
-    padding: 20px;
+/* Banner */
+
+.banner{
+    width:100%;
+    height:300px;
+    object-fit:cover;
 }
+
+/* Navigation */
 
 nav{
-    background-color: black;
-    padding: 10px;
+    background-color:black;
+    padding:12px;
 }
 
 nav a{
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-    font-size: 18px;
+    color:white;
+    margin:20px;
+    text-decoration:none;
+    font-size:18px;
 }
 
 nav a:hover{
-    color: yellow;
+    color:yellow;
 }
 
-.hotel-img{
-    width: 400px;
-    height: 250px;
-    margin: 10px;
-    border-radius: 10px;
+/* Room Container */
+
+.room-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:20px;
 }
 
-.section{
-    padding: 20px;
+/* Room Card */
+
+.room{
+    background:white;
+    margin:20px;
+    width:300px;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0px 0px 10px gray;
 }
 
-.contact{
-    background-color: #333;
-    color: white;
-    padding: 20px;
+.room img{
+    width:100%;
+    height:200px;
+    border-radius:10px;
+}
+
+.price{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+
+button{
+    background-color:black;
+    color:white;
+    padding:10px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:darkgreen;
 }
 
 </style>
@@ -56,48 +89,49 @@ nav a:hover{
 
 <body>
 
-<header>
-<h1>Royal Hotel</h1>
-<p>Delicious Food | Comfortable Stay | Best Service</p>
-</header>
+<!-- Resort Banner -->
+
+<img src="resort_banner.jpg" class="banner">
 
 <nav>
 <a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="checkout.html">Checkout</a>
+<a href="rooms.html">Rooms</a>
+<a href="checkout.html">Booking</a>
 </nav>
 
-<div class="section">
-<h2>Welcome to Royal Hotel</h2>
+<h1>Royal Resort Rooms</h1>
 
-<p>
-Royal Hotel is one of the best hotels in the city.  
-We serve fresh and delicious food with a comfortable dining experience.
-Visit us with your family and friends to enjoy amazing dishes.
-</p>
+<div class="room-container">
 
+<!-- Deluxe Room -->
+
+<div class="room">
+<img src="deluxe.jpg">
+<h2>Deluxe Room</h2>
+<p>Comfortable room with garden view and free breakfast.</p>
+<p class="price">₹3000 / Night</p>
+<button>Book Now</button>
 </div>
 
-<div class="section">
-<h2>Our Hotel</h2>
+<!-- VIP Room -->
 
-<img src="hotel1.jpg" class="hotel-img">
-<img src="hotel2.jpg" class="hotel-img">
-<img src="hotel3.jpg" class="hotel-img">
-
+<div class="room">
+<img src="vip.jpg">
+<h2>VIP Room</h2>
+<p>Luxury room with balcony, AC, TV and premium service.</p>
+<p class="price">₹5000 / Night</p>
+<button>Book Now</button>
 </div>
 
-<div class="contact">
+<!-- Super Deluxe Room -->
 
-<h2>Contact Us</h2>
-
-<p><b>Address:</b> Royal Hotel, Ring Road, Surat, Gujarat</p>
-
-<p><b>Phone:</b> +91 9876543210</p>
-
-<p><b>Email:</b> royalhotel@gmail.com</p>
-
-<p><b>Opening Hours:</b> 10:00 AM – 11:00 PM</p>
+<div class="room">
+<img src="super_deluxe.jpg">
+<h2>Super Deluxe Room</h2>
+<p>Spacious luxury suite with pool view and full facilities.</p>
+<p class="price">₹7500 / Night</p>
+<button>Book Now</button>
+</div>
 
 </div>
 
